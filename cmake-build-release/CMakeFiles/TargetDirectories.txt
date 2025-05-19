@@ -1,0 +1,5 @@
+C:/Users/drprinter/Desktop/Matrix Solver Qt/cmake-build-release/CMakeFiles/MatrixSolver.dir
+C:/Users/drprinter/Desktop/Matrix Solver Qt/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/drprinter/Desktop/Matrix Solver Qt/cmake-build-release/CMakeFiles/rebuild_cache.dir
+C:/Users/drprinter/Desktop/Matrix Solver Qt/cmake-build-release/CMakeFiles/MatrixSolver_autogen_timestamp_deps.dir
+C:/Users/drprinter/Desktop/Matrix Solver Qt/cmake-build-release/CMakeFiles/MatrixSolver_autogen.dir

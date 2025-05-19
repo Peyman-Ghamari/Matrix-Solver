@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>HelpDialog</class>
+    <widget class="QDialog" name="HelpDialog">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>500</width>
+                <height>350</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Help</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">
+                QDialog {
+                background-color: #f3e6ff;
+                }
+                QLabel {
+                color: #4b0082;
+                font-size: 16px;
+                }
+                QPushButton {
+                background-color: #b366ff;
+                color: white;
+                border-radius: 8px;
+                padding: 5px 15px;
+                }
+                QPushButton:hover {
+                background-color: #9933ff;
+                }
+                QStackedWidget {
+                background-color: #ffffff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 10px;
+                }
+            </string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QStackedWidget" name="stackedWidget">
+                    <widget class="QWidget" name="page1">
+                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                            <item>
+                                <widget class="QLabel" name="label1">
+                                    <property name="text">
+                                        <string>First Page Of Guide : How To Use The App</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>12</pointsize>
+                                            <bold>true</bold>
+                                        </font>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_pic1">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>180</width>
+                                            <height>180</height>
+                                        </size>
+                                    </property>
+
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="guideDescriptionLabel1">
+                                    <property name="text">
+                                        <string>Gauss-Jordan Elimination&#10;&#10;This image illustrates the Gauss-Jordan elimination method.&#10;To input the matrix, enter each row in the format:&#10;(a b c | d) or (a b c d)&#10;Use the Enter key to move to the next row.&#10;Each line represents a new row of the augmented matrix.&#10;Spaces ( ) and the pipe symbol (|) act as separators between matrix elements.</string>
+                                    </property>
+                                    <property name="wordWrap">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+
+
+                        </layout>
+                    </widget>
+                    <widget class="QWidget" name="page2">
+                        <layout class="QVBoxLayout" name="verticalLayout_3">
+                            <item>
+                                <widget class="QLabel" name="label2">
+                                    <property name="text">
+                                        <string>Second Page Of Guide : How To Use The App</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>12</pointsize>
+                                            <bold>true</bold>
+                                        </font>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_pic2">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>180</width>
+                                            <height>180</height>
+                                        </size>
+                                    </property>
+
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="guideDescriptionLabel2">
+                                    <property name="text">
+                                        <string>Determinant Calculation&#10;&#10;This image represents the method used for calculating the determinant of a matrix.&#10;To input the matrix, type each row using space-separated values.&#10;Use the Enter key to move to the next row.&#10;Each line represents a row of the matrix.&#10;Spaces act as separators between matrix elements.&#10;&#10;Note: Only square matrices (same number of rows and columns) have a determinant.</string>
+                                    </property>
+                                    <property name="wordWrap">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+
+                        </layout>
+                    </widget>
+                    <widget class="QWidget" name="page3">
+                        <layout class="QVBoxLayout" name="verticalLayout_4">
+                            <item>
+                                <widget class="QLabel" name="label3">
+                                    <property name="text">
+                                        <string>Third Page Of Guide : How To Use The App</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>12</pointsize>
+                                            <bold>true</bold>
+                                        </font>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_pic3">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>180</width>
+                                            <height>180</height>
+                                        </size>
+                                    </property>
+
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="guideDescriptionLabel3">
+                                    <property name="text">
+                                        <string>Inverse Matrix Calculation&#10;&#10;This image demonstrates how to compute the inverse of a matrix using the augmented matrix method.&#10;To input the matrix, type each row with values separated by spaces.&#10;Press Enter to move to the next row.&#10;Each line corresponds to one row of the original matrix.&#10;Spaces act as separators between matrix elements.&#10;&#10;Note: Only square matrices that are non-singular (with non-zero determinant) have an inverse.</string>
+                                    </property>
+                                    <property name="wordWrap">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+
+                        </layout>
+                    </widget>
+                </widget>
+            </item>
+            <item>
+                <layout class="QHBoxLayout" name="buttonLayout">
+                    <item>
+                        <widget class="QPushButton" name="backButton">
+                            <property name="text">
+                                <string>Previous</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="nextButton">
+                            <property name="text">
+                                <string>Next</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="closeButton">
+                            <property name="text">
+                                <string>Close</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

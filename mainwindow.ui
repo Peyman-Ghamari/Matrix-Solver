@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>720</width>
+                <height>540</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Matrix Solver</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <!-- Logo / Title -->
+                <item>
+                    <widget class="QLabel" name="pmLabel">
+                        <property name="text">
+                            <string>PM</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="styleSheet">
+                            <string>
+                                color: #7B1FA2;
+                                font-size: 36px;
+                                font-weight: 700;
+                                letter-spacing: 2px;
+                            </string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- Input Field -->
+                <item>
+                    <widget class="QTextEdit" name="matrixInput">
+                        <property name="placeholderText">
+                            <string>Enter The Augmented Matrix (For Gauss-Jordan : a b c | d , For Inverse OR Determinant : |a b c|)</string>
+                        </property>
+                        <property name="styleSheet">
+                            <string>
+                                background-color: #fafafa;
+                                border: 2px solid #7a4e9f;
+                                border-radius: 6px;
+                                font-size: 16px;
+                                padding: 8px;
+                                color: #333;
+                            </string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- Label Above Buttons -->
+                <item>
+                    <widget class="QLabel" name="titleLabel">
+                        <property name="text">
+                            <string>Select A Method To Compute The Matrix</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="styleSheet">
+                            <string>
+                                background-color: #a8d5ba;
+                                font-size: 20px;
+                                color: #2d2d2d;
+                                padding: 8px;
+                                border-radius: 6px;
+                                font-weight: 600;
+                            </string>
+                        </property>
+                    </widget>
+                </item>
+
+                <!-- Buttons -->
+                <item>
+                    <layout class="QHBoxLayout" name="methodButtonsLayout">
+                        <!-- Gauss-Jordan Button -->
+                        <item>
+                            <widget class="QPushButton" name="btnGaussJordan">
+                                <property name="text">
+                                    <string>Gauss-Jordan</string>
+                                </property>
+                                <property name="checkable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #7a4e9f, stop:1 #a8d5ba);
+                                        color: white;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        border-radius: 10px;
+                                        padding: 10px 20px;
+                                        border: none;
+                                        }
+                                        QPushButton:hover {
+                                        background-color: #8c62b5;
+                                        }
+                                    </string>
+                                </property>
+                            </widget>
+                        </item>
+
+                        <!-- Determinant Button -->
+                        <item>
+                            <widget class="QPushButton" name="btnDeterminant">
+                                <property name="text">
+                                    <string>Determinant</string>
+                                </property>
+                                <property name="checkable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #7a4e9f, stop:1 #a8d5ba);
+                                        color: white;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        border-radius: 10px;
+                                        padding: 10px 20px;
+                                        border: none;
+                                        }
+                                        QPushButton:hover {
+                                        background-color: #8c62b5;
+                                        }
+                                    </string>
+                                </property>
+                            </widget>
+                        </item>
+
+                        <!-- Inverse Button -->
+                        <item>
+                            <widget class="QPushButton" name="btnInverse">
+                                <property name="text">
+                                    <string>Inverse</string>
+                                </property>
+                                <property name="checkable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #7a4e9f, stop:1 #a8d5ba);
+                                        color: white;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        border-radius: 10px;
+                                        padding: 10px 20px;
+                                        border: none;
+                                        }
+                                        QPushButton:hover {
+                                        background-color: #8c62b5;
+                                        }
+                                    </string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </item>
+
+                <!-- Result Display -->
+                <item>
+                    <widget class="QTextBrowser" name="resultDisplay">
+                        <property name="placeholderText">
+                            <string>Results will be shown here...</string>
+                        </property>
+                        <property name="styleSheet">
+                            <string>
+                                background-color: #ffffff;
+                                border: 2px solid #7a4e9f;
+                                font-size: 16px;
+                                color: #2f2f2f;
+                                padding: 10px;
+                                border-radius: 6px;
+                            </string>
+                        </property>
+                    </widget>
+                </item>
+
+            </layout>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
