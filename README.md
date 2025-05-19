@@ -96,8 +96,8 @@ This will install the program and all required Qt dependencies automatically, so
 
 ```bash
 sudo apt install qt6-base-dev build-essential cmake
-git clone https://github.com/Peyman-Ghamari/Matrix-Solver-Qt.git
-cd Matrix-Solver-Qt
+git clone https://github.com/Peyman-Ghamari/Matrix-Solver.git
+cd Matrix-Solver
 mkdir build && cd build
 cmake ..
 make
