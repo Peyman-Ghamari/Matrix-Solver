@@ -44,7 +44,7 @@ When the application starts, a help dialog is automatically displayed to guide y
 ### Gauss-Jordan
 
 - Input the augmented matrix by typing each row like this:
-```
+  ```
   a b c | d
   e f g | h
   ```
