@@ -1,4 +1,9 @@
-# Ignore non-C++ files for language stats
+# Ignore Makefile and C files from GitHub language stats
+Makefile linguist-detectable=false
+*.c linguist-detectable=false
+
+# Optional: ignore other non-C++ files if needed
+*.h linguist-language=C++  # Treat header files as C++
 *.cmake linguist-detectable=false
 CMakeLists.txt linguist-detectable=false
 *.md linguist-detectable=false
