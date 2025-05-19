@@ -27,6 +27,7 @@ This is a graphical application developed in **C++ with Qt framework** to perfor
 
 ![Main Window](ScreenShots/main.png)  
 ![Developer Window](ScreenShots/dev.png)
+![Help Window](ScreenShots/help.png)
 
 ## 🛠️ Technologies Used
 
@@ -38,36 +39,35 @@ This is a graphical application developed in **C++ with Qt framework** to perfor
 
 ## ✅ How to Use
 
+When the application starts, a help dialog is automatically displayed to guide you through using the program. This ensures a smooth and user-friendly experience.
+
 ### Gauss-Jordan
 
-- Input the augmented matrix by typing each row in this format:
-  ```
-  a b c | d
-  e f g | h
-  ```
-- Or:
-  ```
-  a b c d
-  e f g h
-  ```
-- Use **space** or **pipe (|)** as separators. Each line represents a new matrix row.
-- Press **Solve** to get the result. Works for systems with:
-  - Unique solution
-  - No solution (inconsistent)
-  - Infinite solutions
+- Input the augmented matrix by typing each row like this:
+a b c | d
+e f g | h
+
+or simply:
+a b c d
+e f g h
+
+- Use **spaces** or a **pipe (|)** as separators. Each line represents a row of the matrix.
+- Click **Solve** to compute the result. The solver can handle:
+- Unique solution
+- No solution (inconsistent system)
+- Infinite solutions (underdetermined system)
 
 ### Determinant
 
 - Enter a **square matrix** (e.g., 3×3 or 4×4).
-- Use the same input format.
-- Hit **Calculate Determinant**.
+- Use the same input format as above.
+- Click **Calculate Determinant** to get the result.
 
 ### Inverse
 
 - Enter a **square matrix**.
-- Press **Find Inverse**.
-- The inverse will be shown if the matrix is non-singular.
-
+- Click **Find Inverse**.
+- The inverse will be displayed if the matrix is non-singular.
 ## 💿 Easy Installation
 
 To make installation as easy as possible for all users, an installer is provided:
