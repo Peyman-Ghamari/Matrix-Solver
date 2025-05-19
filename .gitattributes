@@ -1,4 +1,12 @@
-*.ui linguist-detectable=false
-CMakeLists.txt linguist-detectable=false
+# Ignore non-C++ files for language stats
 *.cmake linguist-detectable=false
+CMakeLists.txt linguist-detectable=false
 *.md linguist-detectable=false
+*.qrc linguist-detectable=false
+*.ui linguist-detectable=false
+*.txt linguist-detectable=false
+*.ico linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.bat linguist-detectable=false
+*.sh linguist-detectable=false
