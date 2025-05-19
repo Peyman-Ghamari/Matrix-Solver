@@ -2,16 +2,26 @@
 Makefile linguist-detectable=false
 *.c linguist-detectable=false
 
-# Optional: ignore other non-C++ files if needed
-*.h linguist-language=C++  # Treat header files as C++
+# Treat header files as C++
+*.h linguist-language=C++
+
+# Ignore CMake-related files
 *.cmake linguist-detectable=false
 CMakeLists.txt linguist-detectable=false
+
+# Ignore documentation and text files
 *.md linguist-detectable=false
+*.txt linguist-detectable=false
+
+# Ignore Qt-specific resources
 *.qrc linguist-detectable=false
 *.ui linguist-detectable=false
-*.txt linguist-detectable=false
+
+# Ignore media and icons
 *.ico linguist-detectable=false
 *.png linguist-detectable=false
 *.jpg linguist-detectable=false
+
+# Ignore scripts
 *.bat linguist-detectable=false
 *.sh linguist-detectable=false
